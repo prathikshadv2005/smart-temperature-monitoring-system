@@ -1,55 +1,42 @@
-# Circuit Connections
+# 🔌 Circuit Connections
 
-## DHT11 Temperature Sensor
+## DHT11 Sensor Connection
 
-| DHT11 Pin | ESP32 Connection |
-|-----------|------------------|
-| VCC | 3.3V |
-| GND | GND |
-| DATA | GPIO 4 |
+| Component | Pin | Raspberry Pi Pin |
+|-----------|-----|------------------|
+| DHT11 | VCC | Pin 1 (3.3V) |
+| DHT11 | GND | Pin 6 (GND) |
+| DHT11 | DATA | Pin 7 (GPIO4) |
 
 ---
 
 ## LED Connections
 
-| LED | ESP32 Pin | Description |
-|-----|-----------|-------------|
-| Green LED | GPIO 16 | Low Temperature Indicator |
-| Yellow LED | GPIO 17 | Medium Temperature Indicator |
-| Red LED | GPIO 18 | High Temperature Indicator |
+| LED | Raspberry Pi Pin | GPIO |
+|-----|------------------|------|
+| Green LED | Pin 11 | GPIO17 |
+| Yellow LED | Pin 13 | GPIO27 |
+| Red LED | Pin 15 | GPIO22 |
+
+⚠️ Each LED should be connected with a **220Ω resistor**.
 
 ---
 
-## Relay Module
+## LCD Display (16x2 I2C) Connections
 
-| Relay Pin | ESP32 Connection | Purpose |
-|-----------|------------------|---------|
-| VCC | 5V | Power Supply |
-| GND | GND | Ground |
-| IN1 | GPIO 19 | Relay Control Signal |
-
----
-
-## 16x2 LCD Display
-
-| LCD Pin | ESP32 Connection |
+| LCD Pin | Raspberry Pi Pin |
 |---------|------------------|
-| RS | GPIO 21 |
-| EN | GPIO 22 |
-| D4 | GPIO 23 |
-| D5 | GPIO 25 |
-| D6 | GPIO 26 |
-| D7 | GPIO 27 |
-| VCC | 5V |
-| GND | GND |
-| V0 | Potentiometer (Contrast Control) |
+| GND | Pin 6 |
+| VCC | Pin 4 (5V) |
+| SDA | Pin 3 (GPIO2) |
+| SCL | Pin 5 (GPIO3) |
 
 ---
 
-## Potentiometer (20k)
+## Relay Module Connection (Optional)
 
-| Potentiometer Pin | Connection |
-|-------------------|-----------|
-| Pin 1 | GND |
-| Pin 2 (Middle) | LCD V0 |
-| Pin 3 | 5V |
+| Relay Pin | Raspberry Pi Pin |
+|-----------|------------------|
+| IN | Pin 16 (GPIO23) |
+| VCC | Pin 2 (5V) |
+| GND | Pin 6 (GND) |
