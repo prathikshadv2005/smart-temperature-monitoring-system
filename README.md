@@ -1,30 +1,30 @@
-# IoT Temperature Monitoring and Logging System
+# 🌡️ IoT Based Temperature Monitoring System using Raspberry Pi
 
-## Overview
-This project monitors temperature using a DHT11 sensor and indicates different temperature levels using three LEDs. The system also displays temperature on a 16x2 LCD display and logs critical temperature events to Google Sheets.
+## 📖 Overview
+The IoT Based Temperature Monitoring System is designed to monitor environmental temperature using a Raspberry Pi and a DHT11 sensor. The system continuously reads temperature values and processes them to determine the current condition. Based on predefined temperature thresholds, LEDs indicate whether the environment is normal, warning, or critical. The temperature data is also logged to Google Sheets for monitoring and analysis.
 
-## Features
-- Temperature monitoring using DHT11
-- LED indication for temperature levels
-- Real-time temperature display on LCD
-- Relay activation at critical temperature
-- Data logging to Google Sheets
+---
 
-## Components
-- ESP32 Microcontroller
-- DHT11 Temperature Sensor
-- 3 LEDs
-- 220Ω Resistors
-- 16x2 LCD Display
-- 20k Potentiometer
-- 2 Channel Relay Module
-- Breadboard
-- Jumper Wires
+## ⚙️ Working Principle
+1. The DHT11 sensor measures the surrounding temperature.
+2. The temperature data is sent to the Raspberry Pi for processing.
+3. The Raspberry Pi compares the value with predefined threshold levels.
+4. Depending on the temperature range:
+   - 🟢 Green LED → Normal condition
+   - 🟡 Yellow LED → Warning level
+   - 🔴 Red LED → Critical level
+5. The measured temperature values are automatically logged to Google Sheets for record and analysis.
 
-## Working
-The sensor continuously reads the environmental temperature. Based on the value, LEDs indicate different levels. When the temperature crosses the critical threshold, the relay is activated and the timestamp is recorded in Google Sheets.
+---
 
-## Applications
-- Smart home monitoring
-- Industrial temperature monitoring
-- Server room safety system
+## 🌍 Applications
+- Smart home temperature monitoring
+- Server room monitoring
+- Environmental monitoring systems
+- Laboratory temperature control
+- IoT based automation projects
+
+---
+
+## 👩‍💻 Author
+Prathiksha DV
