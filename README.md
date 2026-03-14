@@ -5,6 +5,18 @@ The IoT Based Temperature Monitoring System is designed to monitor environmental
 
 ---
 
+## 🔧 Components Used
+- Raspberry Pi
+- DHT11 Temperature Sensor
+- Green LED
+- Yellow LED
+- Red LED
+- Resistors
+- Breadboard
+- Jumper Wires
+
+---
+
 ## ⚙️ Working Principle
 1. The DHT11 sensor measures the surrounding temperature.
 2. The temperature data is sent to the Raspberry Pi for processing.
