@@ -2,7 +2,7 @@
 
 ## Architecture Diagram
 
-blob:https://web.whatsapp.com/075b093a-e49a-4cf7-8d8f-ed6509ae3bac
+
 
 ---
 
