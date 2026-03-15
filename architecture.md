@@ -2,7 +2,7 @@
 
 ## Architecture Diagram
 
-
+![IoT Based Temperature Monitoring System](architecture.jpeg)
 
 ---
 
